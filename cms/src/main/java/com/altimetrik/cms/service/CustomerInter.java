@@ -15,4 +15,12 @@ public interface CustomerInter {
     public Optional<Customer> deleteCustomer(int customerId);
 
    public Optional<Customer> findByCustomerName(String customerName);
+   //From Java 8
+    // We are allowed write default and static methods with their implementations
+   public default void project(){
+       System.out.println("customer management system");
+   }
+   public static int getNumber(){
+       return 1;
+   }
 }
